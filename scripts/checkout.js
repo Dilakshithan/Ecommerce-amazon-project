@@ -30,7 +30,7 @@ cart.forEach((cartItem)=>{
             ${matchingProduct.name}
           </div>
           <div class="product-price">
-            $${formatPrice(matchingProduct.priceCents)}
+            $${(formatPrice(matchingProduct.priceCents))*cartItem.quantity}
           </div>
           <div class="product-quantity">
             <span>
